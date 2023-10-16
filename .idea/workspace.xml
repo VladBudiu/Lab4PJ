@@ -4,25 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7cfe99d6-4f48-4bd7-bc0c-521bf1d2a4bc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab4PJ.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lab4/Enums/FormatCopiere.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lab4/Enums/ModTIparire.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lab4/Enums/SistemOperare.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lab4/Enums/StareEchipament.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lab4/Handlers/EchipamentHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lab4/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lab4/MainClasses/Copiator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lab4/MainClasses/Echipament.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lab4/MainClasses/Imprimanta.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lab4/MainClasses/SistemeCalcul.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/echipament.txt" afterDir="false" />
+    <list default="true" id="7cfe99d6-4f48-4bd7-bc0c-521bf1d2a4bc" name="Changes" comment="Lab4">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lab4/Enums/StareEchipament.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lab4/Enums/StareEchipament.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lab4/Handlers/EchipamentHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lab4/Handlers/EchipamentHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lab4/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lab4/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lab4/MainClasses/Copiator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lab4/MainClasses/Copiator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lab4/MainClasses/Echipament.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lab4/MainClasses/Echipament.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lab4/MainClasses/Imprimanta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lab4/MainClasses/Imprimanta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lab4/MainClasses/SistemeCalcul.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lab4/MainClasses/SistemeCalcul.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/echipament.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/echipament.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +61,18 @@
       <option name="presentableId" value="Default" />
       <updated>1697487576329</updated>
     </task>
+    <task id="LOCAL-00001" summary="Lab4">
+      <created>1697490492670</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1697490492670</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Lab4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab4" />
   </component>
 </project>
