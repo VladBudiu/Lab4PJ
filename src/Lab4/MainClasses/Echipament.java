@@ -47,12 +47,19 @@ public class Echipament implements Serializable {
         int comparisonResult = aux.compareTo(nume);
 
         if (comparisonResult == 0) {
-            System.out.println(aux);
+            //System.out.println(aux);
             return true;
         } else {
-            System.out.println("nu e bun");
+          //  System.out.println("nu e bun");
             return false;
         }
+    }
+
+    public boolean checkStare(String stare_dorita)
+    {
+        if(stare.toString().compareTo(stare_dorita)==0)
+            return true;
+        else return false;
     }
 
 
