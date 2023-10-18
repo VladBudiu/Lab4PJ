@@ -1,0 +1,24 @@
+package Lab4.Handlers;
+
+import Lab4.MainClasses.Echipament;
+
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+import java.util.List;
+
+public class Serializare {
+    public static void serializare(List<Echipament> echipamente) {
+        try (FileOutputStream fileOut = new FileOutputStream("echip.bin");
+             ObjectOutputStream objectOut = new ObjectOutputStream(fileOut)) {
+
+            // Serializam lista de obiecte
+            objectOut.writeObject(echipamente);
+            System.out.println("Serializare reușită în echip.bin");
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+}

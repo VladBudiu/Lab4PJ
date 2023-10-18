@@ -1,6 +1,8 @@
 package Lab4.MainClasses;
 
+import Lab4.Handlers.Deserializare;
 import Lab4.Handlers.EchipamentHandler;
+import Lab4.Handlers.Serializare;
 
 import java.util.List;
 import java.util.Scanner;
@@ -112,7 +114,25 @@ public class Menu {
                     }
                 }
                     break;
-                case 10:
+                case 10:String opt2;
+                keyboard.nextLine();
+                    System.out.println("1. Serializare\n2.Deserializare\nOpt: ");
+                    opt2=keyboard.nextLine();
+                    switch (opt2)
+                    {
+                        case "1":
+                            Serializare.serializare(echipamente);
+                            break;
+                        case "Serializare":
+                            Serializare.serializare(echipamente);
+                            break;
+                        case "2":
+                            Deserializare.deserializare();
+                            break;
+                        case "Deserializare":
+                            Deserializare.deserializare();
+                            break;
+                    }
                     break;
                 default:
                     System.out.println("Optiunea aleasa este invalida\n");
