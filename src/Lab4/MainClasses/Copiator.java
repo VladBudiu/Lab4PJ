@@ -15,4 +15,8 @@ public class Copiator extends Echipament {
         this.pagToner=pagToner;
         this.format=format;
     }
+    public String toString()
+    {
+        return denumire.toString()+" " +nr_inventar+ " "+pret + " "+zona_mag.toString()+ " "+ stare.toString()+" "+pagToner+" "+format.toString();
+    }
 }

@@ -3,16 +3,23 @@ package Lab4;
 import Lab4.Handlers.EchipamentHandler;
 import Lab4.MainClasses.Echipament;
 
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException {
     List<Echipament> echipamente= new ArrayList<Echipament>();
         EchipamentHandler ech = new EchipamentHandler();
-        echipamente=ech.loadList(echipamente);
-        ech.afisare(echipamente);
+        echipamente=ech.loadList();
+        for(Echipament e: echipamente)
+        {
+            System.out.println(e.getDenumire());;
+        }
+        System.out.println("\n");
+
+        EchipamentHandler.afisare(echipamente);
 
     }
 }

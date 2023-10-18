@@ -21,4 +21,15 @@ public class Echipament implements Serializable {
         this.zona_mag=zona_mag;
         this.stare=stare;
     }
+    public String toString()
+    {
+        return denumire.toString()+" " +nr_inventar+ " "+pret + " "+zona_mag.toString()+ " "+ stare.toString();
+    }
+
+    public String getDenumire()
+    {
+        return denumire;
+    }
+
+
 }
