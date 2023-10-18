@@ -2,6 +2,7 @@ package Lab4;
 
 import Lab4.Handlers.EchipamentHandler;
 import Lab4.MainClasses.Echipament;
+import Lab4.MainClasses.Menu;
 
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
@@ -20,6 +21,8 @@ public class Main {
         System.out.println("\n");
 
         EchipamentHandler.afisare(echipamente);
-
+        System.out.println("\n");
+        System.out.println("\n");
+        Menu.menuAppear(echipamente);
     }
 }
