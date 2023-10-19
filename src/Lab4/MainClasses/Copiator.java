@@ -1,5 +1,10 @@
 package Lab4.MainClasses;
-
+/**
+ * Clasa de obiecte de tip Copiator care mosteneste clasa principala Echipament
+ * @author Vlad Budiu
+ * @version 1
+ * @since 2023
+ * */
 import Lab4.Enums.FormatCopiere;
 import Lab4.Enums.ModTIparire;
 import Lab4.Enums.StareEchipament;
@@ -13,17 +18,37 @@ public class Copiator extends Echipament {
     private FormatCopiere format;
 
     public Copiator() {}
+
+    /**
+     * Constructorul cu parametrii ai clasei Copiator
+     * @param denumire
+     * @param nr_inventar
+     * @param pret
+     * @param zona_mag
+     * @param stare
+     * @param tip
+     * @param pagToner
+     * @param format
+     */
     public Copiator(String denumire, int nr_inventar, float pret, String zona_mag, StareEchipament stare,int tip, int pagToner, FormatCopiere format)
     {
         super(denumire,nr_inventar,pret, zona_mag, stare,tip);
         this.pagToner=pagToner;
         this.format=format;
     }
+
+    /**
+     * Redefinirea functiei toString pentru clasa Copiator
+     * @return
+     */
     public String toString()
     {
         return denumire.toString()+" " +nr_inventar+ " "+pret + " "+zona_mag.toString()+ " "+ stare.toString()+" "+pagToner+" "+format.toString();
     }
 
+    /**
+     * Functie care modifica formatul unui copiator
+     */
     public void modifyFormat()
     {
         System.out.println("Formatul curent a echipamentului este: "+this.format.toString());

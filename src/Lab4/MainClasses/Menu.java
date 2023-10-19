@@ -1,5 +1,10 @@
 package Lab4.MainClasses;
-
+/**
+ * Clasa pentru afisare si executarea optiunilor din meniu
+ * @author Vlad Budiu
+ * @version 1
+ * @since 2023
+ * */
 import Lab4.Handlers.Deserializare;
 import Lab4.Handlers.EchipamentHandler;
 import Lab4.Handlers.Serializare;
@@ -12,6 +17,10 @@ import static java.lang.System.exit;
 public class Menu {
     public Menu() {}
 
+    /**
+     * Functia care se ocupa de afisare optiunilor posibile din meniu si de navigarea acestora
+     * @param echipamente
+     */
     public static void menuAppear(List<Echipament> echipamente)
     {int opt=-1;
         do {

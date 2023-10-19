@@ -1,12 +1,20 @@
 package Lab4.Handlers;
-
+/**
+ * Clasa care are rolul de a se ocupa de procesul de DESERIALIZARE
+ * @author Vlad Budiu
+ * @version 1
+ * @since 2023
+ * */
 import Lab4.MainClasses.Echipament;
 
 import java.io.*;
 import java.util.List;
 
 public class Deserializare {
-
+    /**
+     * Functia care executa deserializarea obiectelor
+     * @return lista de obiecte
+     */
     public static List<Echipament> deserializare() {
         List<Echipament> echipamente = null;
 
