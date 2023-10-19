@@ -50,12 +50,12 @@ public class EchipamentHandler {
                     String dpi=attributes[7];
                     int pagCartus=Integer.parseInt(attributes[8]);
                     ModTIparire modTiparire= ModTIparire.valueOf(attributes[9]);
-                    echipament=new Imprimanta(denumire,nrInventar,pret,zona_mag,stare,0,ppm,dpi,pagCartus, modTiparire);
+                    echipament=new Imprimanta(denumire,nrInventar,pret,zona_mag,stare,ppm,dpi,pagCartus, modTiparire);
                     break;
                 case "Copiator":
                     int  pag= Integer.parseInt(attributes[6]);
                     FormatCopiere format= FormatCopiere.valueOf(attributes[7]);
-                    echipament = new Copiator(denumire,nrInventar,pret,zona_mag,stare,1,pag,format);
+                    echipament = new Copiator(denumire,nrInventar,pret,zona_mag,stare,pag,format);
 
                     break;
                 case "SistemCalcul":
@@ -63,7 +63,7 @@ public class EchipamentHandler {
                     double vitezaProcesor=Double.parseDouble(attributes[7]);
                     int capacitate=Integer.parseInt(attributes[8]);;
                     SistemOperare sistem=SistemOperare.valueOf(attributes[9]);
-                    echipament=new SistemeCalcul(denumire,nrInventar,pret,zona_mag,stare,2,monitor,vitezaProcesor,capacitate,sistem);
+                    echipament=new SistemeCalcul(denumire,nrInventar,pret,zona_mag,stare,monitor,vitezaProcesor,capacitate,sistem);
                     break;
                 default:
                     System.err.println("Tip de echipament necunoscut: " + attributes[4]);

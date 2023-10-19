@@ -14,9 +14,9 @@ public class Imprimanta extends Echipament {
     private ModTIparire modTiparire;
 
     public Imprimanta() {}
-    public Imprimanta(String denumire, int nr_inventar, float pret, String zona_mag, StareEchipament stare,int tip, int ppm, String dpi, int pagCartus, ModTIparire modTipare)
+    public Imprimanta(String denumire, int nr_inventar, float pret, String zona_mag, StareEchipament stare, int ppm, String dpi, int pagCartus, ModTIparire modTipare)
     {
-        super(denumire,nr_inventar,pret, zona_mag, stare,tip);
+        super(denumire,nr_inventar,pret, zona_mag, stare);
         this.ppm=ppm;
         this.dpi=dpi;
         this.pagCartus=pagCartus;

@@ -13,21 +13,19 @@ public class Echipament implements Serializable {
     protected float pret;
     protected String zona_mag;
     protected StareEchipament stare;
-    int tip;
 
     public Echipament(){}
-    public Echipament(String denumire, int nr_inventar, float pret, String zona_mag, StareEchipament stare, int tip)
+    public Echipament(String denumire, int nr_inventar, float pret, String zona_mag, StareEchipament stare)
     {
         this.denumire=denumire;
         this.nr_inventar=nr_inventar;
         this.pret=pret;
         this.zona_mag=zona_mag;
         this.stare=stare;
-        this.tip=tip;
     }
     public String toString()
     {
-        return denumire.toString()+" " +nr_inventar+ " "+pret + " "+zona_mag.toString()+ " "+ stare.toString();
+        return denumire+" " +nr_inventar+ " "+pret + " "+zona_mag.toString()+ " "+ stare;
     }
 
     public String getDenumire()
@@ -35,14 +33,6 @@ public class Echipament implements Serializable {
         return denumire;
     }
 
-    public boolean checkType(int tip)
-    {
-        if(this.tip==tip)
-            return true;
-        else
-            return false;
-
-    }
     public boolean checkName(String nume) {
         String aux = getDenumire();
         int comparisonResult = aux.compareTo(nume);

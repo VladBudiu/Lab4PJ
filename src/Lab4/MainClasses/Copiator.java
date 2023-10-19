@@ -26,13 +26,12 @@ public class Copiator extends Echipament {
      * @param pret
      * @param zona_mag
      * @param stare
-     * @param tip
      * @param pagToner
      * @param format
      */
-    public Copiator(String denumire, int nr_inventar, float pret, String zona_mag, StareEchipament stare,int tip, int pagToner, FormatCopiere format)
+    public Copiator(String denumire, int nr_inventar, float pret, String zona_mag, StareEchipament stare, int pagToner, FormatCopiere format)
     {
-        super(denumire,nr_inventar,pret, zona_mag, stare,tip);
+        super(denumire,nr_inventar,pret, zona_mag, stare);
         this.pagToner=pagToner;
         this.format=format;
     }
