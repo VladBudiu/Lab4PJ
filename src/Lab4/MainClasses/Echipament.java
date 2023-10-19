@@ -76,7 +76,7 @@ public class Echipament implements Serializable {
     {
         for(Echipament e: echipamente)
         {
-            if(e instanceof Copiator)
+            if(e.getClass().getCanonicalName().contains("Copiator"))//--verific in numele canonica daca imi contine clasa
                 System.out.println(e.toString());
         }
     }
@@ -94,10 +94,10 @@ public class Echipament implements Serializable {
     public static void showSistemCalcul(List<Echipament> echipamente)
     {
 
-        SistemeCalcul x= new SistemeCalcul();
+       // SistemeCalcul x= new SistemeCalcul();
         for(Echipament e: echipamente)
         {
-            if(e.getClass()==x.getClass())
+            if(e.getClass()==SistemeCalcul.class)
                 System.out.println(e.toString());
         }
     }
