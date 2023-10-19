@@ -3,6 +3,7 @@ package Lab4.MainClasses;
 import Lab4.Enums.StareEchipament;
 
 import java.io.Serializable;
+import java.util.List;
 import java.util.Scanner;
 
 public class Echipament implements Serializable {
@@ -46,13 +47,11 @@ public class Echipament implements Serializable {
         String aux = getDenumire();
         int comparisonResult = aux.compareTo(nume);
 
-        if (comparisonResult == 0) {
-            //System.out.println(aux);
+        if (comparisonResult == 0)
             return true;
-        } else {
-          //  System.out.println("nu e bun");
-            return false;
-        }
+
+        else return false;
+
     }
 
     public boolean checkStare(String stare_dorita)
@@ -83,5 +82,36 @@ public class Echipament implements Serializable {
 
     }
 
+    public static void showSpecific(List<Echipament> echipamente, int tip)
+    {
+        for(Echipament e: echipamente)
+        {
+            if(e.checkType(tip))
+                System.out.println(e.toString());
+        }
+    }
 
+    public static void SearchandModify(List<Echipament> echipamente) {
+        Scanner keyboard = new Scanner(System.in);
+        String nume_cautat;
+        System.out.println("Introduceti numele dupa care cautati: ");
+        nume_cautat = keyboard.nextLine();
+        for (Echipament e : echipamente) {
+            if (e.checkName(nume_cautat)) {
+                e.modifyStare();
+                break;
+            }
+        }
+    }
+
+    public static void showByState(List<Echipament> echipamente,String stare)
+    {
+        for (Echipament e: echipamente)
+        {
+            if (e.checkStare(stare))
+            {
+                System.out.println(e.toString());
+            }
+        }
+    }
 }

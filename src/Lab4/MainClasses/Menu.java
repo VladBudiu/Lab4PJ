@@ -24,98 +24,26 @@ public class Menu {
             switch (opt) {
                 case 0: exit(0);
                     break;
-                case 1:
-                    EchipamentHandler.afisare(echipamente);
+                case 1: EchipamentHandler.afisare(echipamente);
                     break;
-                case 2:
-                    for(Echipament e: echipamente)
-                    {
-                        if(e.checkType(0))
-                            System.out.println(e.toString());
-                    }
+                case 2: Echipament.showSpecific(echipamente,0);
                     break;
-                case 3:
-                    for(Echipament e: echipamente)
-                    {
-                        if(e.checkType(1))
-                            System.out.println(e.toString());
-                    }
+                case 3: Echipament.showSpecific(echipamente, 1);
                     break;
-                case 4:
-                    for(Echipament e: echipamente)
-                    {
-                        if(e.checkType(2))
-                            System.out.println(e.toString());
-                    }
+                case 4:Echipament.showSpecific(echipamente,2);
                     break;
-                case 5:
-                 System.out.println("Introduceti numele dupa care cautati: ");
-                    keyboard.nextLine();
-                    nume_cautat=keyboard.nextLine();
-                    //System.out.println(nume_cautat);
-                    for (Echipament e: echipamente)
-                    {
-                        if(e.checkName(nume_cautat))
-                        {
-                            e.modifyStare();
-                            break;
-                        }
-                    }
-                    System.out.println("Nu a fost gasit produsul!");
+                case 5: Echipament.SearchandModify(echipamente);
                     break;
-                case 6:
-                    System.out.println("Introduceti numele dupa care cautati: ");
-                    keyboard.nextLine();
-                    nume_cautat=keyboard.nextLine();
-                    for (Echipament e: echipamente)
-                    {
-                        if(e.checkName(nume_cautat)) {
-                            Imprimanta impr;
-                            impr = (Imprimanta) e;
-                            impr.modifyMod();
-                            break;
-                        }
-                    }
-                    System.out.println("Nu a fost gasit produsul!");
+                case 6:Imprimanta.SearchandModify(echipamente);
                     break;
-                case 7:System.out.println("Introduceti numele dupa care cautati: ");
-                    keyboard.nextLine();
-                    nume_cautat=keyboard.nextLine();
-                    for (Echipament e: echipamente)
-                    {
-                        if(e.checkName(nume_cautat))
-                        {
-                            Copiator cop;
-                            cop=(Copiator) e;
-                            cop.modifyFormat();
-                            break;
-                        }
-                    }
-                    System.out.println("Nu a fost gasit produsul!");
+               case 7: Copiator.SearchandModify(echipamente);
+                   break;
+                case 8: SistemeCalcul.SearchandModify(echipamente);
                     break;
-                case 8: System.out.println("Introduceti numele dupa care cautati: ");
-                    keyboard.nextLine();
-                    nume_cautat=keyboard.nextLine();
-                    for (Echipament e: echipamente) {
-                        if (e.checkName(nume_cautat)) {
-                            SistemeCalcul sistemeCalcul;
-                            sistemeCalcul = (SistemeCalcul) e;
-                            sistemeCalcul.modifySystem();
-                            break;
-                        }
-                    }
-                    System.out.println("Nu a fost gasit produsul!");
-                    break;
-                case 9: for (Echipament e: echipamente)
-                {
-                    if (e.checkStare("vandut"))
-                    {
-                        System.out.println(e.toString());
-                    }
-                }
+                case 9: Echipament.showByState(echipamente,"vandut");
                     break;
                 case 10:String opt2;
-                keyboard.nextLine();
+                    keyboard.nextLine();
                     System.out.println("1. Serializare\n2.Deserializare\nOpt: ");
                     opt2=keyboard.nextLine();
                     switch (opt2)

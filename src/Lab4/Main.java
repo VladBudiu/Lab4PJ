@@ -14,15 +14,6 @@ public class Main {
     List<Echipament> echipamente= new ArrayList<Echipament>();
         EchipamentHandler ech = new EchipamentHandler();
         echipamente=ech.loadList();
-//        for(Echipament e: echipamente)
-//        {
-//            System.out.println(e.getDenumire());;
-//        }
-//        System.out.println("\n");
-//
-//        EchipamentHandler.afisare(echipamente);
-//        System.out.println("\n");
-//        System.out.println("\n");
         Menu.menuAppear(echipamente);
     }
 }

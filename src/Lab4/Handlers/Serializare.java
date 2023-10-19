@@ -12,8 +12,9 @@ public class Serializare {
         try (FileOutputStream fileOut = new FileOutputStream("echip.bin");
              ObjectOutputStream objectOut = new ObjectOutputStream(fileOut)) {
 
-            // Serializam lista de obiecte
             objectOut.writeObject(echipamente);
+            objectOut.close();
+            fileOut.close();
             System.out.println("Serializare reușită în echip.bin");
 
         } catch (IOException e) {

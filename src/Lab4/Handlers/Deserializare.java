@@ -13,7 +13,6 @@ public class Deserializare {
         try (FileInputStream fileIn = new FileInputStream("echip.bin");
              ObjectInputStream objectIn = new ObjectInputStream(fileIn)) {
 
-            // Deserializam lista de obiecte
             echipamente = (List<Echipament>) objectIn.readObject();
             System.out.println("Deserializare reușită din echip.bin");
             System.out.println("Noua lista este: \n");
@@ -21,6 +20,8 @@ public class Deserializare {
             {
                 System.out.println(e.toString());
             }
+            objectIn.close();
+            fileIn.close();
 
         } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();

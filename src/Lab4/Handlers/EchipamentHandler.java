@@ -16,7 +16,6 @@ import java.util.List;
 import java.util.Scanner;
 
 public class EchipamentHandler {
-   // private List<Echipament> echipamente;
     public EchipamentHandler() {}
 
     public List loadList() throws FileNotFoundException {
@@ -26,16 +25,14 @@ public class EchipamentHandler {
         while (scanner.hasNext())
         {
             String line = scanner.nextLine();
-        String[] attributes = line.split(";");  // Presupunem că atributele sunt separate prin virgulă
+        String[] attributes = line.split(";");
 
-
-        // Atribuim atributele corespunzătoare și creăm obiectul în funcție de tipul de echipament
         String denumire = attributes[0];
         int nrInventar = Integer.parseInt(attributes[1]);
         float pret = Float.parseFloat(attributes[2]);
         String zona_mag = attributes[3];
         StareEchipament stare = StareEchipament.valueOf(attributes[4]);
-        // Alegeți tipul de echipament în funcție de atribute și creați obiectul corespunzător
+
         Echipament echipament = null;
         switch (attributes[5]) {
             case "Imprimanta":
@@ -63,7 +60,6 @@ public class EchipamentHandler {
                 continue;
             }
 
-        // Adăugăm echipamentul la lista de echipamente
             echipamente.add(echipament);
        }
         return echipamente;

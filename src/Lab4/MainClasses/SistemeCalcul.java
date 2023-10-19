@@ -5,6 +5,7 @@ import Lab4.Enums.SistemOperare;
 import Lab4.Enums.StareEchipament;
 import Lab4.MainClasses.Echipament;
 
+import java.util.List;
 import java.util.Scanner;
 
 public class SistemeCalcul extends Echipament {
@@ -42,7 +43,21 @@ public class SistemeCalcul extends Echipament {
         }
         else
             System.out.println("\nSchimbarea nu poate fi efectuatata");
+    }
 
-
+    public static void SearchandModify(List<Echipament> echipamente)
+    {
+        Scanner keyboard=new Scanner(System.in);
+        String nume_cautat;
+        System.out.println("Introduceti numele dupa care cautati: ");
+        nume_cautat=keyboard.nextLine();
+        for (Echipament e: echipamente) {
+            if (e.checkName(nume_cautat)) {
+                SistemeCalcul sistemeCalcul;
+                sistemeCalcul = (SistemeCalcul) e;
+                sistemeCalcul.modifySystem();
+                break;
+            }
+        }
     }
 }
