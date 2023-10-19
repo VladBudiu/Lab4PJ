@@ -43,7 +43,7 @@ public class Copiator extends Echipament {
      */
     public String toString()
     {
-        return denumire.toString()+" " +nr_inventar+ " "+pret + " "+zona_mag.toString()+ " "+ stare.toString()+" "+pagToner+" "+format.toString();
+        return super.toString()+" "+pagToner+" "+format.toString();
     }
 
     /**

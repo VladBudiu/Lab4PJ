@@ -25,7 +25,7 @@ public class Imprimanta extends Echipament {
 
     public String toString()
     {
-        return denumire.toString()+" " +nr_inventar+ " "+pret + " "+zona_mag.toString()+ " "+ stare.toString()+" "+ ppm+ " "+ dpi.toString()+" "+ pagCartus+" "+modTiparire.toString();
+        return super.toString()+" "+ ppm+ " "+ dpi.toString()+" "+ pagCartus+" "+modTiparire.toString();
     }
 
     public void modifyMod()

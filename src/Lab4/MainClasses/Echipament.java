@@ -82,15 +82,35 @@ public class Echipament implements Serializable {
 
     }
 
-    public static void showSpecific(List<Echipament> echipamente, int tip)
+    public static void showCopiator(List<Echipament> echipamente)
     {
         for(Echipament e: echipamente)
         {
-            if(e.checkType(tip))
+            if(e instanceof Copiator)
                 System.out.println(e.toString());
         }
     }
 
+
+    public static void showImprimanta(List<Echipament> echipamente)
+    {
+        for(Echipament e: echipamente)
+        {
+            if(e instanceof Imprimanta)
+                System.out.println(e.toString());
+        }
+    }
+
+    public static void showSistemCalcul(List<Echipament> echipamente)
+    {
+
+        SistemeCalcul x= new SistemeCalcul();
+        for(Echipament e: echipamente)
+        {
+            if(e.getClass()==x.getClass())
+                System.out.println(e.toString());
+        }
+    }
     public static void SearchandModify(List<Echipament> echipamente) {
         Scanner keyboard = new Scanner(System.in);
         String nume_cautat;

@@ -27,7 +27,7 @@ public class SistemeCalcul extends Echipament {
 
     public String toString()
     {
-        return denumire.toString()+" " +nr_inventar+ " "+pret + " "+zona_mag.toString()+ " "+ stare.toString()+" "+ monitor.toString()+ " "+ vitezaProcesor  +" "+ capacitate+" "+sistem.toString();
+        return super.toString()+" "+ monitor.toString()+ " "+ vitezaProcesor  +" "+ capacitate+" "+sistem.toString();
     }
 
     public void modifySystem()
